@@ -177,7 +177,7 @@ Please submit your question in [Github Issue](https://github.com/xiaoyaoting/vue
 
 ## Thanks
 
-Ms.Y & excellent ui components library
+Ms.Y & excellent ui components library ( 感谢易老师和优秀的前端组件库 )
 
 ## License
 
