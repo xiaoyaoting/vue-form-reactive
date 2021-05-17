@@ -84,7 +84,7 @@ export default {
           <div class="search-handle">
             {this.showMoreIcon()}
             <Button type="primary" on-click={this.handleSearch}>{subresetBtn.submitText}</Button>
-            <Button on-click={this.handleReset}>{subresetBtn.resetText}</Button>
+            <Button  style="marginLeft: 10px" on-click={this.handleReset}>{subresetBtn.resetText}</Button>
           </div>
         </div>
       } else {
@@ -96,7 +96,7 @@ export default {
           </Form>
           <div className="sub-handle" style={{ marginLeft: marginLeft ? marginLeft : 'marginLeft:120px' }}>
             <Button type="primary" on-click={this.handleSubmit}>{subresetBtn.submitText}</Button>
-            <Button on-click={this.handleReset}>{subresetBtn.resetText}</Button>
+            <Button style="marginLeft: 10px" on-click={this.handleReset}>{subresetBtn.resetText}</Button>
           </div>
         </div>
       }

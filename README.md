@@ -167,13 +167,17 @@ Please submit your question in [Github Issue](https://github.com/xiaoyaoting/vue
 提问在 [Github Issue](https://github.com/xiaoyaoting/vue-form-reactive/issues) .
 
 
-## Todo
+## TODO
 
 **vue-form-reactive** Short term plan（近期计划）:
-
+- [ ] Configure forms to generate tables （配置表单生成表格）
 - [ ] Compatible more ui components library ( element-ui, ant disign vue ) （兼容更多UI组件库，比如element-ui, antd-vue）
 - [ ] Compatible react （兼容react框架）
 - [ ] Custom component ( base on slot ) （自定义嵌套组件，vue版本准备基于solt去做）
+
+## Thanks
+
+Ms.Y & excellent ui components library
 
 ## License
 

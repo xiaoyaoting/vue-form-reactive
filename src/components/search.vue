@@ -122,7 +122,7 @@ export default {
         marginLeft: '120px',
       },
       layout: {
-        isInline: false,
+        isInline: true,
         isGrid: true,
         rowOptions: { gutter: 30 },
         colOptions: { span: 8 },
