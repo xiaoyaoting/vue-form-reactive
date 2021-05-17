@@ -18,9 +18,8 @@ export default {
     }
   },
   methods: {
-    onInput(n) {
-      console.log(n)
-      this.$emit('input', this.trueValue);
+    onInput(nVal) {
+      this.$emit('input', nVal);
     },
     update() {
       this.trueValue = this.value
@@ -29,8 +28,9 @@ export default {
   render() {
     return <RadioGroup {...this.options.group} value={this.trueValue}
         on-input={this.onInput}>{this.options.radios.map((opt, index) => {
-            const props = {...opt};
-            return <Radio {...{props}} key={opt.key}/>
+            const label = opt.label
+            const props = {...opt,label: opt.key}
+            return <Radio {...{props}} >{label}</Radio>
         })}</RadioGroup>
 }
 }

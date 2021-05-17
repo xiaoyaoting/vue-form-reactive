@@ -10,8 +10,35 @@
 
 <script>
 import { reactive } from '@vue/composition-api'
-import SearchForm from './search-form.jsx'
-import * as map from '../map'
+import SearchForm from './search-form'
+const typeOptions = () => {
+  return [
+    {
+      key: '00',
+      label: 'New York',
+    },
+    {
+      key: '01',
+      label: 'London',
+    },
+    {
+      key: '02',
+      label: 'Sydney',
+    },
+    {
+      key: '03',
+      label: 'Ottawa',
+    },
+    {
+      key: '04',
+      label: 'Paris',
+    },
+    {
+      key: '05',
+      label: 'Canberra',
+    },
+  ]
+}
 export default {
   components: {
     SearchForm,
@@ -30,67 +57,60 @@ export default {
         ref: 'node',
       },
       item: [
-         {
+        {
           type: 'fSelect',
           labelWidth: 120,
-          title: '信息来源',
+          title: 'Select',
           field: 'resource',
-          placeholder: '请输入信息来源',
-          options: map.typeOptions(),
-          rule: [{ required: true, message: '请输入信息来源' }],
+          options: typeOptions(),
+          rule: [{ required: true}],
         },
         {
           type: 'fInput',
           labelWidth: 120,
-          title: '通知类型',
+          title: 'Type',
           field: 'type',
-          placeholder: '请输入通知类型',
-          rule: [{ required: true, message: '请输入通知类型', trigger: 'blur' }],
+          placeholder: '请输入类型',
+          rule: [
+            { required: true, message: '请输入类型', trigger: 'blur' },
+          ],
         },
-       
+
         {
           type: 'fInput',
           labelWidth: 120,
-          title: '通知标题',
+          title: 'Title',
           field: 'title',
-          placeholder: '请输入通知标题',
-          rule: [{ required: true, message: '请输入通知类型', trigger: 'blur' }],
+          placeholder: '请输入标题',
+          rule: [
+            { required: true, message: '请输入标题', trigger: 'blur' },
+          ],
         },
         {
           type: 'fInput',
           labelWidth: 120,
-          title: '通知内容',
+          title: 'Content',
           field: 'content',
-          placeholder: '请输入通知内容',
+          placeholder: '请输入内容',
           // rule: [{ required: true, message: '请输入通知类型' }],
         },
         {
           type: 'fRadio',
           labelWidth: 120,
-          title: '操作类型',
+          title: '性别',
           field: 'handleType',
           group: {},
           radios: [
             {
-              label: '上线',
-              key: '00'
+              label: '男',
+              key: '00',
             },
             {
-              label: '下线',
+              label: '女',
               key: '01',
-              disabled: true
+              disabled: true,
             },
-          ]
-          // rule: [{ required: true, message: '请输入通知类型' }],
-        },
-        {
-          type: 'timerTask',
-          labelWidth: 120,
-          title: '定时执行',
-          field: 'timer',
-          dateType: 'daterange',
-          placeholder: '请选择日期时间',
-          disabledText: '已关闭定时发送，点击提交按钮后此站内信将立即发送。'
+          ],
           // rule: [{ required: true, message: '请输入通知类型' }],
         },
       ],
@@ -99,14 +119,14 @@ export default {
         submitText: '提交',
         showReset: true,
         resetText: '取消',
-        marginLeft: '120px'
+        marginLeft: '120px',
       },
       layout: {
         isInline: false,
         isGrid: true,
         rowOptions: { gutter: 30 },
         colOptions: { span: 8 },
-      }
+      },
     })
     function validatePass() {
       if (value === '') {
@@ -125,6 +145,6 @@ export default {
       // context.emit('onSearch')
     }
     return { approvalData, formDescriptors, handleSubmit }
-  }
+  },
 }
 </script>

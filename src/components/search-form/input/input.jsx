@@ -9,7 +9,6 @@ export default {
   },
   watch: {
     value() {
-      console.log('123')
       this.update();
     }
   },
@@ -27,7 +26,6 @@ export default {
     }
   },
   render() {
-    console.log(this.options)
     return <Input value={this.trueValue} on-input={this.onInput} placeholder={this.options.placeholder} />;
   }
 }
