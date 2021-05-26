@@ -11,6 +11,8 @@
     "@vue/composition-api": "^1.0.0-rc.8",
     "core-js": "^3.6.5",
     "iview": "^3.5.4",
+    "less": "^4.1.1",
+    "less-loader": "^5.0.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
