@@ -74,6 +74,9 @@ export default {
     SearchForm,
     TableList
   },
+  props: {
+    // approvalData: Object
+  },
   setup(props, context) {
     const formDescriptors = reactive({
       form: {

@@ -1,14 +1,3 @@
-# vue-form-reactive （Vue + iView 动态表单组件, 可自定义表单组件）
-
-## Introduction
-```
-vue-form-reactive is a reactive form component base on iview. You just need to write descriptors of the data you want, vue-form-reactive will generate the form automatically.
-
-vue-form-reactive 是基于iview的动态表单组件。您只需编写所需数据的描述符 ，vue-form-reactive 将自动生成表单。
-```
-
-### Usage Example
-``` vue
 <template>
   <div>
     <SearchForm ref="search" :formDescriptors="formDescriptors" @onSubmit="handleSubmit" />
@@ -150,36 +139,3 @@ export default {
   },
 }
 </script>
-
-```
-
-## Features
-
-- Generate form from descriptors （从描述符生成表单）
-- Base on iView and jsx（基于 iView 和 jsx 语法）
-- The operation is simple， Small size（体积小，配置简单）
-
-
-
-## Question
-
-Please submit your question in [Github Issue](https://github.com/xiaoyaoting/vue-form-reactive/issues) .
-提问在 [Github Issue](https://github.com/xiaoyaoting/vue-form-reactive/issues) .
-
-
-## TODO
-
-**vue-form-reactive** Short term plan（近期计划）:
-- [ ] Configure forms to generate tables （配置表单生成表格）
-- [ ] Compatible more ui components library ( element-ui, ant disign vue ) （兼容更多UI组件库，比如element-ui, antd-vue）
-- [ ] Compatible react （兼容react框架）
-- [ ] Custom component ( base on slot ) （自定义嵌套组件，vue版本准备基于solt去做）
-
-## Thanks
-
-Ms.Y & excellent ui components library ( 感谢易老师和优秀的前端组件库 )
-
-## License
-
-[MIT license](https://tldrlegal.com/license/mit-license)
-

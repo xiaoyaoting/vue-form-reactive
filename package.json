@@ -1,11 +1,10 @@
 {
-  "name": "app",
+  "name": "vue-form-reactive",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "abc": "abc"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "@vue/composition-api": "^1.0.0-rc.8",
@@ -13,10 +12,18 @@
     "iview": "^3.5.4",
     "less": "^4.1.1",
     "less-loader": "^5.0.0",
+<<<<<<< HEAD
     "vue": "^2.6.11"
+=======
+    "vue": "^2.6.11",
+    "vue-router": "^3.2.0",
+    "vuex": "^3.4.0"
+>>>>>>> d9bf39bcee69af4eea98bf29f600f6c532855534
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "vue-template-compiler": "^2.6.11"
   },
